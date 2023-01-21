@@ -48,17 +48,6 @@
 			  	}
 			%>
 			</table>
-			<%
-			out.println("<h1>Tu Carro</h1>");
-			out.println("<ul>");
-			for (int i=0;i<arrProductos.size();i++) {
-				String valor=arrProductos.get(i);
-				if(session.getAttribute(valor)!=null){
-					out.println("<li>"+valor+": "+session.getAttribute(valor)+"unidades"+"</li>");
-				}
-			}
-			out.println("</ul>");
-			%>
 			<%@ include file="muestraCarro.jsp" %>
 		</form>
 	</body>
